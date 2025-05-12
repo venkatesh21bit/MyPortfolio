@@ -1,15 +1,15 @@
 import { InlineCode } from "@/once-ui/components";
 
 const person = {
-  firstName: "Selene",
-  lastName: "Yu",
+  firstName: "Venkatesh",
+  lastName: "K",
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Design Engineer",
+  role: "Full Stack Developer",
   avatar: "/images/avatar.jpg",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  location: "Asia/Kolkata", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages: [], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter = {
@@ -17,7 +17,7 @@ const newsletter = {
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
   description: (
     <>
-      I occasionally write about design, technology, and share thoughts on the intersection of
+      I occasionally write about technology, and share thoughts on the intersection of
       creativity and engineering.
     </>
   ),
@@ -29,22 +29,22 @@ const social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system/nextjs-starter",
+    link: "https://github.com/venkatesh21bit",
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
+    link: "https://www.linkedin.com/in/venkatesh-k-187448287",
   },
   {
     name: "X",
     icon: "x",
-    link: "",
+    link: "https://x.com/VenkateshK66781",
   },
   {
     name: "Email",
     icon: "email",
-    link: "mailto:example@gmail.com",
+    link: "mailto:venkatesh.k21062005@gmail.com",
   },
 ];
 
@@ -52,11 +52,11 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Design engineer and builder</>,
+  headline: <>Full Stack Developer</>,
   subline: (
     <>
-      I'm Selene, a design engineer at <InlineCode>FLY</InlineCode>, where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      I'm Venkatesh, a Full Stack Developer , I have a strong interest in exploring new techs
+      <br /> and building innovative solutions. I am passionate about creating user-friendly and efficient applications.
     </>
   ),
 };
@@ -74,76 +74,121 @@ const about = {
   },
   calendar: {
     display: true,
-    link: "https://cal.com",
+    link: "https://cal.com/venkatesh-k",
   },
   intro: {
     display: true,
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        I-am-venkatesh <br />
+        ------------------------- <br />
+        💻 I am a self-taught Full Stack Developer <br />
+        📚 Continuously learning and improving my skills <br />
+        📝 I have a strong interest in exploring new techs <br />
+        🔭 Working on my own project <br />
+        🌱 Learning more about AI, ML and BlockChain Technology <br />
+        🌟 Main languages: TypeScript, Python, JavaScript <br />
+        🚩 Interested in Full Stack Machine Learning Application development <br />
+        💖 In a complicated relationship with Neural Networks <br />
+        🎵 Love metal, lofi, jazz and soft music <br />
       </>
     ),
   },
   work: {
     display: true, // set to false to hide this section
-    title: "Work Experience",
+    title: "Notable Works",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "Quick Start Express ",
+        timeframe: "2024 ",
+        role: "- an npm package",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+             A simple CLI tool to generate Express servers from multiple available templates.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Contributed to the development of a CLI tool that simplifies the process of creating Express servers. Optimized and wrote test cases for the package, ensuring its reliability and performance.
           </>,
         ],
         images: [
           // optional: leave the array empty if you don't want to display images
           {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
+            src: "/images/projects/cover-01.jpg",
+            alt: "Quick Start Express",
             width: 16,
             height: 9,
           },
         ],
+
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "Smartchain ERP",
+        timeframe: "2025",
+        role: "- a web application",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            SmartChain ERP is a next-generation, AI-powered Enterprise Resource Planning (ERP) platform
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Designed and developed a full-stack web application from scratch, handling everything from system architecture and UI/UX design to backend development and database integration, ensuring responsive design and optimal performance across platforms.
+          </>,
+        ],
+        images: [
+          {
+            src: "/images/projects/cover-02.jpg",
+            alt: "Smartchain ERP",
+            width: 16,
+            height: 9,
+          }
+        ],
+      },
+      {
+        company: "Edge AI model for Sony Aitrios Hackathon Finals",
+        timeframe: "2025",
+        role: "- an AI model",
+        achievements: [
+          <>
+            Developed an edge AI model for the Sony Aitrios Hackathon Finals, focusing on detecting QR codes and decoding and damage detection of packages.
+          </>,
+          <>
+            Implemented a custom AI model using Brain Builder for QR code detection and decoding, achieving an accuracy of 90% on the test dataset.
+            </>,
+        ],
+        images: [
+          {
+            src: "/images/projects/cover-03.jpg",
+            alt: "Edge AI model for Sony Aitrios Hackathon Finals",
+            width: 16,
+            height: 9,
+          }
+        ],
+      },
+      {
+        company: "DEV-X",
+        timeframe: "2025",
+        role: "- a web application",
+        achievements: [
+          <>
+             A Web Time Machine allows users to explore different eras of web design and functionality, from the early days of the internet to the modern web.
+          </>,
+          <>
+            Developed a web application at DEV-X coding challenge that allows users to explore different eras of web design and functionality, from the early days of the internet to the modern web. The application features a user-friendly interface and interactive elements that showcase the evolution of web design.
           </>,
         ],
         images: [],
-      },
+      }
     ],
+    
+
   },
   studies: {
     display: true, // set to false to hide this section
     title: "Studies",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
-      },
-      {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "Amrita Vishwa Vidyapeetham, Coimbatore",
+        description: <>Pursuing an undergraduate degree in Computer Science and Engineering.</>,
       },
     ],
   },
@@ -152,36 +197,76 @@ const about = {
     title: "Technical skills",
     skills: [
       {
-        title: "Figma",
-        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        title: "Next.js",
+        description: <>Building next-gen apps with Next.js and modern frameworks.</>,
+        images: [],
       },
       {
-        title: "Next.js",
-        description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        title: "React.js",
+        description: <>Creating interactive UIs with React.js.</>,
+        images: [],
+      },
+     
+      {
+        title: "Express.js",
+        description: <>Developing RESTful APIs and web applications with Express.js.</>,
+        images: [],
+      },
+      {
+        title: "Node.js",
+        description: <>Building scalable server-side applications with Node.js.</>,
+        images: [],
+      },
+      {
+        title: "Express.js",
+        description: <>Developing RESTful APIs and web applications with Express.js.</>,
+        images: [],
+      },
+      {
+        title: "Tailwind CSS",
+        description: <>Crafting responsive designs with Tailwind CSS.</>,
+        images: [],
+      },
+      {
+        title: "TypeScript",
+        description: <>Enhancing JavaScript with TypeScript for better development.</>,
+        images: [],
+      },
+      {
+        title: "JavaScript",
+        description: <>Building dynamic web applications with JavaScript.</>,
+        images: [],
+      },
+      {
+        title: "HTML5",
+        description: <>Creating semantic and accessible web content with HTML5.</>,
+        images: [],
+      },
+      {
+        title: "CSS3",
+        description: <>Styling web pages with modern CSS techniques.</>,
+        images: [],
+      },
+      {
+        title: "Python",
+        description: <>Building applications and scripts using Python.</>,
+        images: [],
+      },
+      
+      {
+        title: "Django",
+        description: <>Developing robust backend systems with Django.</>,
+        images: [],
+      },
+      {
+        title: "PostgreSQL",
+        description: <>Designing and managing relational databases with PostgreSQL.</>,
+        images: [],
+      },
+      {
+        title: "MongoDB",
+        description: <>Working with NoSQL databases like MongoDB for scalable solutions.</>,
+        images: [],
       },
     ],
   },
@@ -203,83 +288,4 @@ const work = {
   // All projects will be listed on the /home and /work routes
 };
 
-const gallery = {
-  label: "Gallery",
-  title: "My photo gallery",
-  description: `A photo collection by ${person.name}`,
-  // Images from https://pexels.com
-  images: [
-    {
-      src: "/images/gallery/img-01.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/img-02.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-03.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/img-04.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-05.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-06.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/img-07.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-08.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/img-09.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-10.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-11.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/img-12.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-13.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-14.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-  ],
-};
-
-export { person, social, newsletter, home, about, blog, work, gallery };
+export { person, social, newsletter, home, about, blog, work};
