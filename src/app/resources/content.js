@@ -123,21 +123,42 @@ const about = {
 
       },
       {
-        company: "Smartchain ERP",
+        company: "Vendor -- ERP Supply Chain Management System",
         timeframe: "2025",
         role: "- a web application",
         achievements: [
           <>
-            SmartChain ERP is a next-generation, AI-powered Enterprise Resource Planning (ERP) platform
+            An intelligent supply chain management platform that streamlines stock tracking, order management, and delivery operations with role-based interfaces for Manufacturers, Employees, and Retailers.
           </>,
           <>
-            Designed and developed a full-stack web application from scratch, handling everything from system architecture and UI/UX design to backend development and database integration, ensuring responsive design and optimal performance across platforms.
+            Designed and developed a comprehensive ERP system with AI-powered features including automatic order allocation, dynamic stock management, and IoT integration with edge AI for package detection and quality assurance.
           </>,
         ],
         images: [
           {
             src: "/images/projects/cover-02.jpg",
-            alt: "Smartchain ERP",
+            alt: "Vendor ERP System",
+            width: 16,
+            height: 9,
+          }
+        ],
+      },
+      {
+        company: "ReWear - Community Clothing Exchange",
+        timeframe: "2025",
+        role: "- a web application",
+        achievements: [
+          <>
+            A sustainable fashion platform enabling users to exchange unused clothing through direct swaps or a point-based redemption system to reduce textile waste.
+          </>,
+          <>
+            Built a full-stack web application with Django REST API backend and Next.js frontend, featuring user authentication, item management, transaction system, and comprehensive admin panel with 27 API endpoints.
+          </>,
+        ],
+        images: [
+          {
+            src: "/images/projects/cover-04.png",
+            alt: "ReWear Platform",
             width: 16,
             height: 9,
           }
@@ -165,18 +186,25 @@ const about = {
         ],
       },
       {
-        company: "DEV-X",
+        company: "DEV-X Web Time Machine",
         timeframe: "2025",
         role: "- a web application",
         achievements: [
           <>
-             A Web Time Machine allows users to explore different eras of web design and functionality, from the early days of the internet to the modern web.
+             A Web Time Machine that allows users to explore different eras of web design and functionality, from the early days of the internet to the modern web.
           </>,
           <>
-            Developed a web application at DEV-X coding challenge that allows users to explore different eras of web design and functionality, from the early days of the internet to the modern web. The application features a user-friendly interface and interactive elements that showcase the evolution of web design.
+            Developed a web application at DEV-X coding challenge that showcases the evolution of web design with interactive elements and user-friendly interface demonstrating historical web technologies.
           </>,
         ],
-        images: [],
+        images: [
+          {
+          src: "/images/projects/cover-05.png",
+            alt: "Edge AI model for Sony Aitrios Hackathon Finals",
+            width: 16,
+            height: 9,
+          }
+        ],
       }
     ],
     

@@ -1,6 +1,5 @@
-import { Column, Flex, Heading } from "@/once-ui/components";
+import { Column, Flex, Heading, Text } from "@/once-ui/components";
 import { Mailchimp } from "@/components";
-import { Posts } from "@/components/blog/Posts";
 import { baseURL } from "@/app/resources";
 import { blog, person, newsletter } from "@/app/resources/content";
 
@@ -61,9 +60,29 @@ export default function Blog() {
       <Heading marginBottom="l" variant="display-strong-s">
         {blog.title}
       </Heading>
-      <Column fillWidth flex={1}>
-        <Posts range={[1, 3]} thumbnail />
-        <Posts range={[4]} columns="2" />
+      <Column fillWidth flex={1} gap="l" paddingY="l">
+        <Text
+          variant="body-default-l"
+          onBackground="neutral-weak"
+          align="center"
+        >
+          🚧 Blog Coming Soon 🚧
+        </Text>
+        <Text
+          variant="body-default-m"
+          onBackground="neutral-medium"
+          align="center"
+        >
+          I'm currently working on some exciting content for this blog. 
+          I'll let you know when I write my first post!
+        </Text>
+        <Text
+          variant="body-default-s"
+          onBackground="neutral-weak"
+          align="center"
+        >
+          Stay tuned for updates on web development, AI, and my latest projects.
+        </Text>
       </Column>
       {newsletter.display && <Mailchimp newsletter={newsletter} />}
     </Column>

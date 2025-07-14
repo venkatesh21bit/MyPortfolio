@@ -1,0 +1,93 @@
+---
+title: "Vendor -- ERP Supply Chain Management System"
+publishedAt: "2025"
+summary: "An intelligent supply chain management platform that streamlines stock tracking, order management, and delivery operations."
+images:
+  - "/images/projects/cover-02.jpg"
+link: "https://github.com/Vendor-Innovate-Solutions/Vendor-frontend"
+productLink: "https://vendor-frontend-production-be99.up.railway.app/"
+---
+
+## Overview
+
+Vendor is an intelligent supply chain management platform that streamlines stock tracking, order management, and delivery operations. The system is tailored for Manufacturers, Employees, and Retailers with a smart, role-based interface.
+
+## Key Features
+
+### 🔐 Authentication & Access Control
+- **Secure Login System**: Django access token authentication
+- **Role-Based Dashboards**: Manufacturer, Employee, and Retailer interfaces
+- **User Management**: Comprehensive user profile and configuration system
+
+### 🌐 Role-Based Dashboards
+
+**Manufacturer Dashboard:**
+- Real-time stock levels, sales, and order tracking
+- Auto-order allocation system for intelligent task assignment
+- Reports and analytics with visualizations (bar charts and graphs)
+
+**Employee Dashboard:**
+- Assigned delivery tasks and order fulfillment interface
+- Shipping details and package tracking module
+- Real-time instructions and update system
+
+**Retailer Dashboard:**
+- Browse and place orders based on available stock
+- Track order status with live updates
+- Instant notifications on fulfillment or delays
+
+### 📦 Stock Management Module
+- **Real-time Inventory**: Live stock count and metrics
+- **Visual Analytics**: Stock overview graphs showing supply and demand
+- **AI-Powered Alerts**: High demand notifications for fast-moving SKUs
+- **Product Management**: Interface for registering new products
+
+### 💰 Accounting & Billing
+- **Invoice Generation**: Create bills and track invoices
+- **Customer Management**: CRM module with customer creation
+- **Payment Tracking**: Visual payment tracking with due alerts
+- **Vendor Bills**: Manage purchase-side bills from suppliers
+- **Document Configuration**: Customize invoice/bill formats
+
+### 🧠 IoT & AI Integration
+**Edge AI Package (IMX500 Sensor):**
+- QR & Box Detection for order tracking
+- Defect/Mismatch Detection for quality assurance
+- Low-latency edge inference using OpenCV, YOLOv5, and MobileNet
+- Data transmission via MQTT
+
+## Technical Architecture
+
+### Frontend
+- **Framework**: Next.js 14 with TypeScript
+- **Styling**: Tailwind CSS for responsive design
+- **State Management**: React hooks and context
+- **Deployment**: Railway platform
+
+### Backend (Private Repository)
+- **Framework**: Django with Django REST Framework
+- **Database**: PostgreSQL for robust data management
+- **Authentication**: JWT token-based authentication
+- **API Architecture**: RESTful endpoints
+- **Deployment**: Railway with Docker and Gunicorn
+
+### Key Backend Features
+- **Automatic Order Allocation**: Orders auto-assigned based on workload, shift, and proximity
+- **Dynamic Stock Management**: Real-time supply task completion updates stock levels
+- **IoT Integration**: MQTT communication with edge AI devices
+
+## Development Highlights
+
+- **Full-Stack Development**: Built comprehensive frontend with role-based interfaces
+- **System Architecture**: Designed scalable ERP system architecture
+- **AI Integration**: Implemented edge AI for package detection and quality control
+- **Real-time Operations**: Live stock tracking and order management
+- **Responsive Design**: Optimized for all device types
+
+## Live Demo
+
+- **Production Frontend**: [View Application](https://vendor-frontend-production-be99.up.railway.app/)
+- **Source Code**: [GitHub Repository](https://github.com/Vendor-Innovate-Solutions/Vendor-frontend)
+- **Demo Video**: [Watch Setup Guide](https://youtu.be/4CgKMEibgIw)
+
+*Note: The backend is proprietary and maintained in a private repository for security reasons.*

@@ -22,6 +22,7 @@ export const Mailchimp = ({ newsletter }: { newsletter: NewsletterProps }) => {
   const [email, setEmail] = useState<string>("");
   const [error, setError] = useState<string>("");
   const [touched, setTouched] = useState<boolean>(false);
+  const [showMessage, setShowMessage] = useState<boolean>(false);
 
   const validateEmail = (email: string): boolean => {
     if (email === "") {
@@ -50,6 +51,12 @@ export const Mailchimp = ({ newsletter }: { newsletter: NewsletterProps }) => {
     if (!validateEmail(email)) {
       setError("Please enter a valid email address.");
     }
+  };
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    setShowMessage(true);
+    setTimeout(() => setShowMessage(false), 3000);
   };
 
   return (
@@ -126,14 +133,23 @@ export const Mailchimp = ({ newsletter }: { newsletter: NewsletterProps }) => {
       >
         {newsletter.description}
       </Text>
+      {showMessage && (
+        <Text
+          style={{ position: "relative" }}
+          marginBottom="m"
+          onBackground="brand-medium"
+          size="s"
+        >
+          📧 Newsletter is not configured yet. Stay tuned for updates!
+        </Text>
+      )}
       <form
         style={{
           width: "100%",
           display: "flex",
           justifyContent: "center",
         }}
-        action={mailchimp.action}
-        method="post"
+        onSubmit={handleSubmit}
         id="mc-embedded-subscribe-form"
         name="mc-embedded-subscribe-form"
       >

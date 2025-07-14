@@ -1,0 +1,119 @@
+---
+title: "ReWear - Community Clothing Exchange"
+publishedAt: "2025"
+summary: "A sustainable fashion platform enabling users to exchange unused clothing through direct swaps or a point-based redemption system."
+images:
+  - "/images/projects/cover-04.png"
+link: "https://github.com/venkatesh21bit/ReWear-Community-Clothing-Exchange"
+productLink: "https://frontend-production-5793.up.railway.app/"
+---
+
+## Overview
+
+ReWear is a web-based platform that enables users to exchange unused clothing through direct swaps or a point-based redemption system. The goal is to promote sustainable fashion and reduce textile waste by encouraging users to reuse wearable garments instead of discarding them.
+
+## Key Features
+
+### 🔐 User Authentication & Profile Management
+- **Secure Authentication**: Email/password signup and login system
+- **User Dashboard**: Profile details, points balance, and transaction history
+- **Session Management**: Secure user session handling with JWT tokens
+
+### 🏠 Interactive Landing Page
+- **Platform Introduction**: Mission and sustainable fashion impact statistics
+- **Featured Items**: Carousel showcasing popular items
+- **Quick Actions**: "Start Swapping", "Browse Items", "List an Item" CTAs
+
+### 👕 Comprehensive Item Management
+- **Detailed Item Pages**: Image galleries with full descriptions
+- **Advanced Categorization**: Categories (tops, bottoms, outerwear), types (casual, formal, sportwear)
+- **Condition Tracking**: New, like new, good, fair condition ratings
+- **Multi-Image Upload**: Support for multiple item images
+- **Smart Tagging**: Enhanced discoverability through tags
+
+### 💱 Flexible Exchange System
+- **Direct Swaps**: User-to-user clothing exchanges
+- **Points-Based System**: Redeem points for desired items
+- **Transaction Tracking**: Complete history of swaps and purchases
+- **Rating System**: User rating and review system for trust building
+
+### 👨‍💼 Admin Panel & Moderation
+- **Content Moderation**: Approve/reject item listings
+- **User Management**: Suspension capabilities and user oversight
+- **Analytics Dashboard**: Platform usage and engagement metrics
+- **Spam Protection**: Remove inappropriate or spam items
+
+## Technical Architecture
+
+### Database Design (PostgreSQL)
+**5 Core Entities:**
+- **User**: Extended Django user model with profile info and points balance
+- **Item**: Detailed clothing categorization with condition and metadata
+- **ItemImage**: Multiple images per item with primary image designation
+- **Transaction**: Swap requests, purchases, and status tracking
+- **Rating**: User rating and review system
+
+### Backend (Django + PostgreSQL)
+- **Framework**: Django 5.1.5 with Django REST Framework
+- **Database**: PostgreSQL for robust data management
+- **Authentication**: JWT token-based authentication
+- **File Storage**: Media handling for item images
+- **API Architecture**: 27 comprehensive RESTful endpoints
+
+### Frontend (Next.js + TypeScript)
+- **Framework**: Next.js 15 with App Router
+- **Language**: TypeScript for type safety
+- **Styling**: Tailwind CSS for responsive design
+- **State Management**: React hooks and context
+- **API Integration**: Axios for HTTP requests
+
+## Development Highlights
+
+### API Development & Testing
+- **27 API Endpoints**: Complete coverage of all platform features
+- **Comprehensive Testing**: 27 Postman test cases covering authentication, user management, item management, transactions, and error handling
+- **API Documentation**: Detailed testing guide and environment setup
+
+### Full-Stack Implementation
+- **Backend**: Complete Django setup with PostgreSQL
+- **Frontend**: Next.js with TypeScript and Tailwind CSS
+- **Authentication**: JWT-based user authentication system
+- **File Management**: Image upload and storage system
+- **Admin Interface**: Django admin panel for platform management
+
+## Impact & Sustainability
+
+ReWear addresses the growing concern of textile waste by:
+
+- **Reducing Waste**: Extending the lifecycle of clothing items
+- **Community Building**: Connecting environmentally conscious users
+- **Affordable Fashion**: Making quality clothing accessible through swaps
+- **Awareness**: Promoting sustainable fashion practices
+
+## Live Demo & Repository
+
+- **Production Platform**: [Try ReWear](https://frontend-production-5793.up.railway.app/)
+- **Source Code**: [GitHub Repository](https://github.com/venkatesh21bit/ReWear-Community-Clothing-Exchange)
+- **API Documentation**: [Live API Endpoint](https://rewear-community-clothing-exchange-production.up.railway.app/api/)
+
+## Development Status
+
+✅ **Completed Features:**
+- Backend Django setup with PostgreSQL
+- Frontend Next.js setup with TypeScript & Tailwind
+- Complete API endpoints development (27 endpoints)
+- Comprehensive API testing with Postman
+- Database schema design and ERD
+- User authentication system with JWT
+- Item management features (CRUD, image upload, filtering)
+- Swap/transaction mechanism with points system
+- Rating and review system
+- Admin panel with Django admin
+- Production deployment on Railway
+
+🔄 **In Progress:**
+- User interface implementation
+- Frontend-backend integration
+- UI/UX refinements
+
+*Developed as part of the Odoo Hackathon, focusing on sustainable fashion and community-driven clothing exchange.*
