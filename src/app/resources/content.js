@@ -123,6 +123,27 @@ const about = {
 
       },
       {
+        company: "ClarityLegal - AI-Powered Legal Document Analysis Platform",
+        timeframe: "Sep 2025 - Nov 2025",
+        role: "- a web application",
+        achievements: [
+          <>
+            An intelligent legal document analysis platform that leverages Google's Vertex AI to make sophisticated contract review accessible to everyone with RAG-powered smart search and AI-driven risk detection.
+          </>,
+          <>
+            Built a full-stack application with Next.js frontend and FastAPI backend, integrating Google Cloud Platform services including Vertex AI, Cloud Storage, Firestore, and Cloud Run for serverless deployment.
+          </>,
+        ],
+        images: [
+          {
+            src: "/images/projects/cover-06.png",
+            alt: "ClarityLegal Platform",
+            width: 16,
+            height: 9,
+          }
+        ],
+      },
+      {
         company: "Vendor -- ERP Supply Chain Management System",
         timeframe: "2025",
         role: "- a web application",
@@ -178,7 +199,7 @@ const about = {
         ],
         images: [
           {
-            src: "/images/projects/cover-03.jpg",
+            src: "/images/projects/cover-03.png",
             alt: "Edge AI model for Sony Aitrios Hackathon Finals",
             width: 16,
             height: 9,
