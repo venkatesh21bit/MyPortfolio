@@ -1,0 +1,15 @@
+---
+title: "Evaluation of Memory Caching Architectures"
+publishedAt: "2024"
+summary: "Evaluation of long-context understanding and retrieval properties of memory caching architectures."
+images: []
+---
+
+## Overview
+
+Formulated and analyzed implementations of Google Research's recent "Memory Caching: RNNs with Growing Memory" architecture to evaluate long-context understanding and retrieval properties.
+
+## Key Features
+
+- **Sequence Configuration**: Profiled sub-quadratic sequence configurations by embedding Gated Residual Memory (GRM) components and Sparse Selective Caching (SSC) topologies onto Deep Linear Attention (DLA) systems.
+- **Token Routers**: Tested Mixture-of-Experts (MoE) style token routers to contextually gate access to historical sequence checkpoints, successfully interpolating operational trade-offs between hidden state RNN and global attention bounds.

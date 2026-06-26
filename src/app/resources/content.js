@@ -6,7 +6,7 @@ const person = {
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Full Stack Developer",
+  role: "Student",
   avatar: "/images/avatar.jpg",
   location: "Asia/Kolkata", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
   languages: [], // optional: Leave the array empty if you don't want to display languages
@@ -52,11 +52,15 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Full Stack Developer</>,
+  headline: <>Student</>,
   subline: (
     <>
-      I'm Venkatesh, a Full Stack Developer , I have a strong interest in exploring new techs
+      I'm Venkatesh, a Student , I have a strong interest in exploring new techs
       <br /> and building innovative solutions. I am passionate about creating user-friendly and efficient applications.
+      <br /><br />
+      🏆 <b>Awards & Achievements:</b> 1st Place Winner at SEED Business Challenge 2026, National Finalist at Sony Aitrios Hackathon (2025).
+      <br />
+      📜 <b>Research:</b> Co-authored "A Hybrid Blockchain-IPFS Framework for Product Authentication and Supply Chain Management in E-Commerce" (Accepted for publication at ICGPC-2026 - Best Paper Track).
     </>
   ),
 };
@@ -83,7 +87,7 @@ const about = {
       <>
         I-am-venkatesh <br />
         ------------------------- <br />
-        💻 I am a self-taught Full Stack Developer <br />
+        💻 I am a Student <br />
         📚 Continuously learning and improving my skills <br />
         📝 I have a strong interest in exploring new techs <br />
         🔭 Working on my own project <br />
@@ -92,6 +96,9 @@ const about = {
         🚩 Interested in Full Stack Machine Learning Application development <br />
         💖 In a complicated relationship with Neural Networks <br />
         🎵 Love metal, lofi, jazz and soft music <br />
+        ------------------------- <br />
+        🏆 <b>Awards & Achievements:</b> 1st Place Winner at SEED Business Challenge 2026, National Finalist at Sony Aitrios Hackathon (2025). <br />
+        📜 <b>Research:</b> Co-authored "A Hybrid Blockchain-IPFS Framework for Product Authentication and Supply Chain Management in E-Commerce" (Accepted for publication at ICGPC-2026 - Best Paper Track). <br />
       </>
     ),
   },
@@ -226,6 +233,57 @@ const about = {
             height: 9,
           }
         ],
+      },
+      {
+        company: "Predictive B2B Growth Engine Optimization",
+        timeframe: "2026",
+        role: "- SEED Business Challenge",
+        achievements: [
+          <>
+            Analyzed an enterprise dataset of 122,178 comprehensive business records across sales pipelines, multi-touch marketing attribution, and historical prospect engagement patterns.
+          </>,
+          <>
+            Formulated a data-driven diagnostic engine using predictive classification models to calculate Ideal Customer Profile (ICP) and alignment scores, isolating systemic funnel drop-offs.
+          </>,
+          <>
+            Structured an operational playbook and financial scaling simulation designed to reduce Customer Acquisition Cost (CAC) by 25-40%, boost lead conversion 2x-3x, and shrink the sales velocity cycle down to &lt; 60 days.
+          </>,
+        ],
+        images: [],
+      },
+      {
+        company: "etcd Leader Election Workflow Visualiser",
+        timeframe: "2024",
+        role: "- Distributed Systems Project",
+        achievements: [
+          <>
+            Developed an interactive visualization system demonstrating real-time fault tolerance, node crash recovery, and state synchronization across a distributed 3-node etcd cluster using the Raft consensus protocol.
+          </>,
+          <>
+            Configured concurrent Python client engines competing for state-driven transactional locking via Compare-And-Swap (CAS) operations, implementing lease-based Time-To-Live (TTL) mechanics for failovers.
+          </>,
+          <>
+            Engineered a Flask API gateway utilizing Server-Sent Events (SSE) and persistent polling hooks to translate live PostgreSQL shared database mutations and cluster membership flags directly to a web interface.
+          </>,
+        ],
+        images: [],
+      },
+      {
+        company: "Evaluation of Memory Caching Architectures",
+        timeframe: "2024",
+        role: "- Independent Research Project",
+        achievements: [
+          <>
+            Formulated and analyzed implementations of Google Research's recent "Memory Caching: RNNs with Growing Memory" architecture to evaluate long-context understanding and retrieval properties.
+          </>,
+          <>
+            Profiled sub-quadratic sequence configurations by embedding Gated Residual Memory (GRM) components and Sparse Selective Caching (SSC) topologies onto Deep Linear Attention (DLA) systems.
+          </>,
+          <>
+            Tested Mixture-of-Experts (MoE) style token routers to contextually gate access to historical sequence checkpoints, successfully interpolating operational trade-offs between hidden state RNN and global attention bounds.
+          </>,
+        ],
+        images: [],
       }
     ],
     
